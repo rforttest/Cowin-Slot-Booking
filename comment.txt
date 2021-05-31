@@ -1,0 +1,9 @@
+​ @Neeraj Saraswat  ​  ​ Hey check out my script link is above and remeber to firstly open readme.txt as it will guide you and dont delete any of file otherwise it will not work ..
+https://drive.google.com/drive/folders/1V6_b1QNlUDYDNBaeT6qgcmXxx1QyMcaw?usp=sharing
+
+
+IF any error came comment me if will fix it 
+
+note: ON config.py file except phone number the information like pincode ,refresh rate is uselless but dont delete this you only need to do is change phone number on it ......  Read Readme.txt in this file
+
+Comment me if it worked or any error occured
