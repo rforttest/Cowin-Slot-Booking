@@ -96,6 +96,7 @@ def main():
                 
             else:
                 print("invalid token trying again")
+                beep(WARNING_BEEP_DURATION[0] , WARNING_BEEP_DURATION[1])
                 speak("Logging again")
                 token = generate_token_OTP(base_request_header)
                 token_valid = True
