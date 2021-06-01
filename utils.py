@@ -387,9 +387,7 @@ def book_appointment(request_header, details):
 
     try:
         valid_captcha = True
-        speak("Booking Started sir")
-        beep(WARNING_BEEP_DURATION[0] , WARNING_BEEP_DURATION[1])
-        while valid_captcha:
+        while valid_captcha
             captcha = generate_captcha(request_header, 'y')
             # os.system('say "Slot Spotted."')
             
@@ -536,6 +534,8 @@ def check_and_book(request_header, beneficiary_dtls, location_dtls, search_optio
                 random_slot = random.randint(1, len(option['slots']))
                 choice = f'1.{random_slot}'
             else:
+                Speak ("Booking Started Sir")
+                beep(WARNING_BEEP_DURATION[0] , WARNING_BEEP_DURATION[1])
                 choice = inputimeout(
                     prompt='----------> Wait 20 seconds for updated options OR \n----------> Enter a choice e.g: 1.4 for (1st center 4th slot): ',
                     timeout=20)
