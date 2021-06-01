@@ -388,6 +388,7 @@ def book_appointment(request_header, details):
     try:
         valid_captcha = True
         speak("Booking Started sir")
+        beep(WARNING_BEEP_DURATION[0] , WARNING_BEEP_DURATION[1])
         while valid_captcha:
             captcha = generate_captcha(request_header, 'y')
             # os.system('say "Slot Spotted."')
