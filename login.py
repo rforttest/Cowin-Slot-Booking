@@ -56,6 +56,7 @@ def validateOTP(txnId=None):
             
         
         else:
+            print("It Seems You have Entered Wrong OTP") 
             speak("Error IN OTP Validation Probalbly you entered wrong otp")
             print(f"Validate otp Status code: {resp.status_code}")
             # sys.exit('Terminated')
@@ -69,6 +70,7 @@ def get_authenticated_session():
         token_json = validateOTP(txnId=txn['txnId'])
         if token_json != False: 
             speak("login Succesfully")
+            print("Login Successfully")
             token = token_json['token']
             return token
             # print(token)
